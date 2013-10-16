@@ -611,7 +611,8 @@ footer .social a:hover { background-position: left top; }
 
 .about-us-text p {
     padding: 0 20px;
-    line-height: 28px;
+    /*line-height: 28px;*/
+    line-height: 20px;
     font-size: 13px;
 }
 
@@ -878,7 +879,8 @@ footer .social a:hover { background-position: left top; }
 
 .services-half-width-text p {
     padding: 0 20px;
-    line-height: 28px;
+    /*line-height: 28px;*/
+    line-height: 20px;
     font-size: 13px;
 }
 
