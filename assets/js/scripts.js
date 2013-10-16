@@ -46,31 +46,6 @@ jQuery(document).ready(function() {
 
 
 /*
-    Show latest tweets
-*/
-jQuery(function($) {
-    $(".show-tweets").tweet({
-        // username: "anli_zaimi",
-        query: "#itxsaigai",
-        page: 1,
-        count: 10,
-        loading_text: "loading ..."
-    }).bind("loaded", function() {
-        var ul = $(this).find(".tweet_list");
-        var ticker = function() {
-            setTimeout(function() {
-                ul.find('li:first').animate( {marginTop: '-4em'}, 500, function() {
-                    $(this).detach().appendTo(ul).removeAttr('style');
-                });
-                ticker();
-            }, 5000);
-        };
-        ticker();
-    });
-});
-
-
-/*
     Flickr feed
 */
 $(document).ready(function() {
@@ -78,7 +53,7 @@ $(document).ready(function() {
         limit: 8,
         qstrings: {
             // id: '52617155@N08'
-            id: '72157636584789105'
+            tags: "itxsaigai"
         },
         itemTemplate: '<li><a href="{{link}}" target="_blank"><img src="{{image_s}}" alt="{{title}}" /></a></li>'
     });
